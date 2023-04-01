@@ -8,6 +8,7 @@ function solve() {
     let countElement = document.getElementById('people-count');
     let daysElement = document.getElementById('days-count');
     let fromDateElement = document.getElementById('from-date')
+    let emailElement = document.getElementById('email')
     let nextBtnElement = document.getElementById('next-btn');
     let main = document.getElementById('main') ;
     let infoListElement = document.querySelector('.ticket-info-list');
@@ -22,7 +23,8 @@ function onNext(e) {
     || lastNameElement.value == ''
     || daysElement.value == ''
     ||countElement.value == ''
-    || fromDateElement.value == '')
+    || fromDateElement.value == ''
+    || emailElement.value == '')
    {
         return;
     }
@@ -43,6 +45,9 @@ function onNext(e) {
     let numDays = document.createElement('p');
     numDays.textContent = `For ${daysElement.value} days`;
 
+    let email = document.createElement('p');
+    email.textContent = `Email: ${emailElement.value}`;
+
     let editBtn = document.createElement("button");
     editBtn.setAttribute('class', 'edit-btn');
     editBtn.textContent = 'Edit';
@@ -55,6 +60,7 @@ function onNext(e) {
     articleElementInfo.appendChild(fromDate);
     articleElementInfo.appendChild(numDays);
     articleElementInfo.appendChild(numPople);
+    articleElementInfo.appendChild(email);
 
     liElementInfo.appendChild(articleElementInfo);
     liElementInfo.appendChild(editBtn);
@@ -67,12 +73,14 @@ function onNext(e) {
     let editFromDate = fromDateElement.value;
     let editcountElement = countElement.value;
     let editdaysElement = daysElement.value;
+    let editEmailElement = emailElement.value;
 
 firstNameElement.value = "";
 lastNameElement.value = "";
 daysElement.value = "";
 countElement.value = "";
 fromDateElement.value = "";
+emailElement.value = "";
 nextBtnElement.disabled = true;
 
 editBtn.addEventListener("click", onEdit);
@@ -82,6 +90,7 @@ function onEdit() {
     daysElement.value = editdaysElement;
     countElement.value = editcountElement;
     fromDateElement.value = editFromDate;
+    emailElement.value = editEmailElement;
 
   liElementInfo.remove();
 
