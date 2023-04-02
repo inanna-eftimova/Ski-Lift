@@ -13,7 +13,7 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     place-items: center;
-    background-image: url("../img/zero.jpg");
+    background-image: url("../img/new_img.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -70,7 +70,7 @@ font-weight: 500;
     padding: 0;
     letter-spacing: 0px;
     font-family: 'Rubik Distressed', cursive;
-   color: rgb(242, 238, 213);
+    color: rgb(242, 238, 213);
 }
 
 .first-container {
