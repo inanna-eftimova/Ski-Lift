@@ -36,7 +36,7 @@ body {
     font-size: 5rem;
     letter-spacing: 0.1rem;
     background:linear-gradient(180deg, rgba(165,195,250,1) 17%, rgb(220, 229, 236) 48%, rgb(237, 247, 231) 57%, rgb(153, 183, 246) 69%, rgb(50, 96, 221) 78%);
-/*     color: transparent; */
+    color: transparent;
     background-clip: text;
 -webkit-background-clip: text;
 font-weight: 500;
@@ -70,7 +70,7 @@ font-weight: 500;
     padding: 0;
     letter-spacing: 0px;
     font-family: 'Rubik Distressed', cursive;
-/*     color: rgb(242, 238, 213); */
+    color: rgb(242, 238, 213);
 }
 
 .first-container {
